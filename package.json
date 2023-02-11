@@ -1,0 +1,31 @@
+{
+  "name": "duo-gen",
+  "version": "1.0.0",
+  "description": "Generate 2FA codes for Duo Mobile",
+  "scripts": {
+    "run": "node dist/cli",
+    "build": "tsc",
+    "link": "npm link duo-gen",
+    "unlink": "npm unlink duo-gen"
+  },
+  "type": "commonjs",
+  "keywords": [
+    "duo",
+    "2fa"
+  ],
+  "author": "TURX (turx2003@gmail.com)",
+  "license": "GPL-3.0",
+  "bin": {
+    "duo-gen": "dist/cli.js"
+  },
+  "dependencies": {
+    "@types/node": "^18.13.0",
+    "@types/yargs": "^17.0.22",
+    "node-fetch": "^3.3.0",
+    "otplib": "^12.0.1",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5",
+    "yargs": "^17.6.2"
+  }
+}
